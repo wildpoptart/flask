@@ -1,0 +1,25 @@
+<html>
+   <body>
+      
+      <form action = "{{ url_for('addrec') }}" method = "POST">
+         <h3>Job Information</h3>
+         Name<br>
+         <input type = "text" name = "nm" /></br>
+
+         <label for="cars">Choose a jobID:</label>
+         <select name="jobID" id="jobID">
+            <option value="345">345</option>
+            <option value="4556">4556</option>
+            <option value="234">234</option>
+            <option value="765">765</option>
+         </select>
+
+         
+
+         <br>
+         <input type = "submit" value = "submit" /><br>
+         <a href = "\list">go back to list page</a>
+      </form>
+      
+   </body>
+</html>
