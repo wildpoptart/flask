@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <table border = 1>
+         <caption>Entries</caption>
+         <thead>
+            <td>Date</td>
+            <td>jobID</td>
+            <td>jobName</td>
+            <td>UserID</td>
+            <td>User</td>
+            <td>Ontology</td>
+            <td>Personnel</td>
+            <td>Structure</td>
+            <td>Infrastructure</td>
+            <td>Vehicle</td>
+            <td>Weapons</td>
+            <td>Animals</td>
+            <td>totalFrames</td>
+            <td>completedFrames</td>
+            <td>lastFrame</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["date"]}}</td>
+               <td>{{row["jobID"]}}</td>
+               <td>{{row["jobName"]}}</td>
+               <td>{{row["userID"]}}</td>
+               <td>{{row["user"]}}</td>
+               <td>{{row["ontology"]}}</td>
+               <td>{{row["personnel"]}}</td>
+               <td>{{row["structure"]}}</td>
+               <td>{{row["infrastructure"]}}</td>
+               <td>{{row["vehicle"]}}</td>
+               <td>{{row["weapons"]}}</td>
+               <td>{{row["animals"]}}</td>
+               <td>{{row["totalFrames"]}}</td>
+               <td>{{row["completedFrames"]}}</td>
+               <td>{{row["lastFrame"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+      
+      
+   </body>
+</html>

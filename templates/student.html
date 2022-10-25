@@ -1,0 +1,46 @@
+<html>
+   <body>
+      
+      <form action = "{{ url_for('addrec') }}" method = "POST">
+         <h3>Job Information</h3>
+         Date<input type = "date" name = "date" /><br>
+
+         <label for="cars">Choose a jobID:</label>
+         <select type="text"name="jobID" id="jobID">
+            <option value="345">345</option>
+            <option value="4556">4556</option>
+            <option value="234">234</option>
+            <option value="765">765</option>
+         </select><br>
+      
+         jobName        <input type = "text" name = "jobName"value="apple" /><br>
+         userID         <input type = "text" name = "userID" value="0"/><br>
+         user           <input type = "text" name = "user" value="stan" /><br>
+
+         <label for="cars">Choose a Ontology:</label>
+         <select name="ontology" id="ontology">
+            <option value="personnel">personnel</option>
+            <option value="structure">structure</option>
+            <option value="infrastructure">infrastructure</option>
+            <option value="vehicle">vehicle</option>
+            <option value="weapons">weapons</option>
+            <option value="animal">animal</option>
+         </select><br>
+
+         personnel      <input type = "text" name = "personnel" value="0"/><br>
+         structure      <input type = "text" name = "structure" value="0"/><br>
+         infrastructure <input type = "text" name = "infrastructure" value="0"/><br>
+         vehicle        <input type = "text" name = "vehicle" value="0"/><br>
+         weapons        <input type = "text" name = "weapons" value="0"/><br>
+         animal         <input type = "text" name = "animals" value="0"/><br>
+
+         totalFrames    <input type = "text" name = "totalFrames" value="0"/><br>
+         completedFrames<input type = "text" name = "completedFrames" value="0"/><br>
+         lastFrame      <input type = "text" name = "lastFrame" value="0"/><br>
+
+         <br><input type = "submit" value = "submit" /><br>
+         <a href = "\list">go back to list page</a>
+      </form>
+      
+   </body>
+</html>
